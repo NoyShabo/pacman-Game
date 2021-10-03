@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+body {
+    background-color: rgb(0, 0, 0);
+    color: lightgoldenrodyellow;
+    text-align: center;
+    /* font-family: "Comic Sans MS", "Comic Sans", cursive; */
+    background-color: black;
+    font-family: 'Fjalla One', sans-serif;
+    color: yellow;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+.cell {
+    width: 36px;
+    height: 36px;
+    text-align: center;
+    /* font-size: 1.5em; */
+    color: yellow;
+    border-radius: 15%;
+}
+
+.ghost {
+    -webkit-mask-image: url(../imgs/ghost.svg);
+    mask-image: url(../imgs/ghost.svg);
+    width: 30px;
+    height: 30px;
+    background-color: #8cffa0;
+    -webkit-mask-size: 30px 30px;
+    mask-size: 30px 30px;
+    mask-repeat: no-repeat;
+    -webkit-mask-repeat: no-repeat;
+    z-index: -1;
+    text-indent: -9999px;
+}
+
+
+/* .formLine {
+    margin: 10px;
+    padding: 10px;
+    background-color: cornflowerblue;
+} */
+
+table {
+    margin: auto;
+    /* border-collapse: collapse; */
+}
+
+.board-container {
+    width: 1300px;
+    margin: 0 auto;
+}
+
+.wall {
+    background-color: rgb(119, 0, 255);
+    margin: 12px;
+    width: 16px;
+    height: 16px;
+    text-indent: -9999px;
+}
+
+h3,
+h1 {
+    color: #FFFFFF;
+    text-shadow: 0 -1px 4px #FFF, 0 -2px 10px #ff0, 0 -10px 20px #ff8000, 0 -18px 40px #F00;
+    position: absolute;
+    right: 50%;
+    transform: translateX(50%);
+    font-size: 48px;
+    margin-top: 120px;
+}
+
+.modal {
+    display: none;
+    z-index: 10;
+    position: relative;
+}
+
+h1 {
+    margin-top: 60px;
+}
+
+button {
+    position: absolute;
+    right: 50%;
+    margin-top: 280px;
+    transform: translateX(50%);
+    border: none;
+    border-radius: 10px;
+    width: 60px;
+    background-color: white;
+    height: 22px;
+    box-shadow: 0 -1px 4px #FFF, 0 -2px 10px #ff0, 0 -10px 20px #ff8000, 0 -18px 40px #F00;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+
+button:hover {
+    -webkit-box-shadow: inset -1px 3px 8px 5px #1F87FF, 2px 5px 16px 0px #0B325E, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+    box-shadow: inset -1px 3px 8px 5px #1F87FF, 2px 5px 16px 0px #0B325E, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+}
+
+.pacman {
+    width: 25px;
+    height: 25px;
+}
+
+.wallPro {
+    background-color: rgb(247, 225, 34);
+    text-indent: -9999px;
+}
+
+.wallPro:nth-child(2n) {
+    background-color: rgb(255, 51, 0);
+    /* border-right: chartreuse 5px solid; */
+}
+
+.wallPro:nth-child(3n) {
+    background-color: rgb(0, 162, 255);
+    /* border-right: chartreuse 5px solid; */
+}
+
+.wallPro:nth-child(4n) {
+    background-color: rgb(160, 255, 152);
+    /* border-right: chartreuse 5px solid; */
+}
+
+.wallPro:nth-child(5n) {
+    background-color: rgb(252, 133, 222);
+    /* border-right: chartreuse 5px solid; */
+}
+
+.wallRow {
+    background-color: black;
+    border-top: inset 2px blue;
+    border-bottom: inset 2px blue;
+}
+
+.wallColRight {
+    border-right: inset 2px blue;
+    background-color: black;
+    border-radius: 10%;
+}
+
+.wallColLeft {
+    border-left: inset 2px blue;
+    background-color: black;
+}
+
+.wallColBothSide {
+    border-left: inset 2px blue;
+    border-right: inset 2px blue;
+    background-color: black;
+}
+
+.wallRowDown {
+    border-bottom: inset 2px blue;
+    background-color: black;
+}
+
+.wallRowUP {
+    border-top: inset 2px blue;
+}
+
+
+/* 
+@media only screen and (max-width: 600px) {
+    .cell {
+        max-width: 20px;
+        max-height: 20px;
+        text-align: center;
+        font-size: 1.5em;
+    }
+    .ghost {
+        width: 30px;
+        height: 30px;
+        mask-size: 30px 30px;
+    }
+} */
