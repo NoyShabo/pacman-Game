@@ -28,11 +28,11 @@ function pacmanEatsFood() {
     pacmanEats++;
     if (pacmanEats === 1) {
         gTimerInterval = setInterval(myTimer, 1);
-        gMusicGame = new Audio('../audio/pac.mp3');
+        gMusicGame = new Audio('./audio/pac.mp3');
         gMusicGame.play();
     }
     updateScore(1);
-    var eatSound = new Audio('../audio/eatsound.mp3');
+    var eatSound = new Audio('./audio/eatsound.mp3');
     eatSound.play();
 
     if (pacmanEats === 155) {
